@@ -197,8 +197,8 @@ type = internal/backlight
 
 output = eDP-1-1
 card = intel_backlight
-format = <label> <bar>
-label = 
+format = <label>
+label =  %percentage:3%%
 
 bar-width = 10
 bar-indicator = |
@@ -273,8 +273,8 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = %m-%d
-date-alt = %Y-%m-%d
+date = %d-%m
+date-alt = %d-%m-%Y
 
 time = %H:%M
 time-alt = %H:%M:%S
@@ -292,7 +292,7 @@ myLaptopSink = alsa_output.pci-0000_00_1f.3.analog-stereo
 
 sink = myLaptopSink
 
-format-volume = <ramp-volume> <label-volume> <bar-volume>
+format-volume = <ramp-volume> <label-volume>
 label-volume =  %percentage:3%%
 label-volume-foreground = ${root.foreground}
 label-muted =  muted
