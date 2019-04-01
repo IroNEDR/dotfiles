@@ -96,6 +96,9 @@ nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
 
 set guifont=Fira\ Code\ Regular
 
+" Apply YCM FixIt
+map <F9> :YcmCompleter FixIt<CR>
+
 if !has('gui_running')
   set t_Co=256
 endif
